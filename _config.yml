@@ -1,13 +1,8 @@
 title: Proyecto Final
 lang: es
 description: Proyecto Final DI 2024
-remote_theme: jekyll/dark-poole
+remote_theme: jeffreytse/jekyll-theme-yat
 
 plugins:  
 
- - jemoji
- - jekyll-avatar
- - jekyll-mentions
- - jekyll-feed
- - jekyll-include-cache
  - jekyll-remote-theme
