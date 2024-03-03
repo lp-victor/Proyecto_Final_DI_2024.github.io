@@ -307,8 +307,8 @@ public class ConversorController implements Initializable {
             stage.setTitle("Valores de conversión");
             stage.setScene(new Scene(root));
             stage.setResizable(false);
-            stage.initModality(Modality.WINDOW_MODAL);
-            stage.show();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.showAndWait();
         } catch (IOException ex) {
             System.out.println("Error!");
         }

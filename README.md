@@ -28,10 +28,15 @@ El modo científica nos permite realizar las operaciones matemáticas más avanz
 
 El modo conversion nos permite calcular factores de conversion de diferentes unidades. Podremos cambiar entre unidades de masa, tiempo, longitud o monetarias. 
 
-Dentro este modo, podremos pinchar en la sección de 'Edición' > 'Valor de conversion' para acceder a una ventana donde podremos acceder a una ventana
-para configurar los valores de conversion para las diferentes monedas.
-
 <p align="center">
     <img src="/media/modo_conversion.png" alt="Imagen modo conversión">
 </p>
 
+
+Dentro este modo, podremos pinchar en la sección de 'Edición' > 'Valor de conversion' para acceder a una ventana donde podremos acceder a una ventana
+para configurar los valores de conversion para las diferentes monedas.
+
+<p align="center">
+    <img src="/media/valor-de-conversion.png
+    " alt="Imagen modo conversión">
+</p>
