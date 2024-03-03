@@ -13,7 +13,7 @@ Se podrá acceder y navegar entre los diferentes modos pinchando en la sección 
 El modo simple nos permite realizar las operaciones matemáticas básicas. 
 
 <p align="center">
-    <img src="/media/modo_simple.png" alt="Imagen modo simple">
+    <img src="media/modo_simple.png" alt="Imagen modo simple">
 </p>
 
 ## Modo científica
@@ -21,7 +21,7 @@ El modo simple nos permite realizar las operaciones matemáticas básicas.
 El modo científica nos permite realizar las operaciones matemáticas más avanzadas, como operaciones trigonométricas o exponenciales. 
 
 <p align="center">
-    <img src="/media/modo_cientifica.png" alt="Imagen modo científica">
+    <img src="media/modo_cientifica.png" alt="Imagen modo científica">
 </p>
 
 ## Modo conversión
@@ -29,7 +29,7 @@ El modo científica nos permite realizar las operaciones matemáticas más avanz
 El modo conversion nos permite calcular factores de conversion de diferentes unidades. Podremos cambiar entre unidades de masa, tiempo, longitud o monetarias. 
 
 <p align="center">
-    <img src="/media/modo_conversion.png" alt="Imagen modo conversión">
+    <img src="media/modo_conversion.png" alt="Imagen modo conversión">
 </p>
 
 
@@ -37,6 +37,5 @@ Dentro este modo, podremos pinchar en la sección de 'Edición' > 'Valor de conv
 para configurar los valores de conversion para las diferentes monedas.
 
 <p align="center">
-    <img src="/media/valor-de-conversion.png
-    " alt="Imagen modo conversión">
+    <img src="media/valor_de_conversion.png" alt="Imagen modo conversión">
 </p>
