@@ -1,7 +1,7 @@
 title: Proyecto Final
 lang: es
 description: Proyecto Final DI 2024
-remote_theme: rundocs/dark-poole
+remote_theme: jekyll/dark-poole
 
 plugins:  
 
