@@ -1,0 +1,53 @@
+/* ***************** BOTONES ***************** */
+.boton-numero {
+    -fx-background-color:  #2E2F38;
+}
+.boton-numero:hover{
+    -fx-background-color:  #575757;
+}
+.boton-especial {
+    -fx-background-color:  #4E505F;
+}
+.boton-especial:hover{
+    -fx-background-color:  #9fa2b8;
+}
+.boton-operacion {
+    -fx-background-color:   #4B5EFC;
+    background-color:   #4B5EFC;
+}
+.boton-operacion:hover{
+    -fx-background-color:  #7a87ff;
+    background-color:  #7a87ff;
+}
+
+/* ***************** BARRA DE MENU ***************** */
+.menu-bar {
+    -fx-background-color: #17171C;
+    background-color: #17171C;
+}
+
+.menu-bar .context-menu{ /* El context es la caja del desplegable */
+    -fx-background-color: #17171C;
+    background-color: #17171C;
+}
+
+.menu-bar *  {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    font-size: 16px;
+    -fx-font-weight: bold;
+    font-weight: bold;
+}
+
+.menu .menu-item:hover {
+    -fx-background-color: #444;
+    background-color: #444;
+}
+
+/* ***************** COMBO BOX ***************** */
+
+.combo-box {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+

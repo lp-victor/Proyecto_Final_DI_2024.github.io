@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="349.0" style="-fx-background-color: #17171C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="victor.practica7_3.controlador.CalculadoraController">
+   <children>
+      <Label fx:id="L_resultado" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="109.0" prefHeight="39.0" prefWidth="299.0" style="-fx-background-color: #17171C;" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutX="8.0" layoutY="178.0" prefHeight="331.0" prefWidth="334.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="341.0">
+               <children>
+                  <Button fx:id="BTN_mMas" mnemonicParsing="false" onAction="#guardarMemoria" prefHeight="71.75" prefWidth="72.0" styleClass="boton-especial" stylesheets="@../../../styles/style.css" text="M+" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_mMenos" mnemonicParsing="false" onAction="#recuperarMemoria" prefHeight="71.75" prefWidth="72.0" styleClass="boton-especial" stylesheets="@../../../styles/style.css" text="M-" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_masMenos" mnemonicParsing="false" onAction="#cambiarSigno" prefHeight="71.75" prefWidth="72.0" styleClass="boton-especial" stylesheets="@../../../styles/style.css">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/-.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_div" mnemonicParsing="false" onAction="#division" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-operacion" stylesheets="@../../../styles/style.css" text="/" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="263.0">
+               <children>
+                  <Button fx:id="BTN_7" mnemonicParsing="false" onAction="#siete" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="7" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_8" mnemonicParsing="false" onAction="#ocho" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="8" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_9" mnemonicParsing="false" onAction="#nueve" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="9" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_mult" mnemonicParsing="false" onAction="#multiplicacion" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-operacion" stylesheets="@../../../styles/style.css" text="*" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="344.0">
+               <children>
+                  <Button fx:id="BTN_6" mnemonicParsing="false" onAction="#seis" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="6" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_5" mnemonicParsing="false" onAction="#cinco" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="5" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_4" mnemonicParsing="false" onAction="#cuatro" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="4" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_mas" mnemonicParsing="false" onAction="#sumar" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-operacion" text="+" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@../../../styles/style.css" />
+                        <URL value="@../../../styles/style.css" />
+                     </stylesheets>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="263.0">
+               <children>
+                  <Button fx:id="BTN_1" mnemonicParsing="false" onAction="#uno" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="1" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_2" mnemonicParsing="false" onAction="#dos" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="2" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_3" mnemonicParsing="false" onAction="#tres" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="3" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_menos" mnemonicParsing="false" onAction="#resta" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-operacion" stylesheets="@../../../styles/style.css" text="-" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="263.0">
+               <children>
+                  <Button fx:id="BTN_0" mnemonicParsing="false" onAction="#cero" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="0" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_punto" mnemonicParsing="false" onAction="#decimal" onKeyPressed="#recogerTeclado" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="." textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_C" mnemonicParsing="false" onAction="#clear" prefHeight="71.75" prefWidth="72.0" styleClass="boton-numero" stylesheets="@../../../styles/style.css" text="C" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_igual" mnemonicParsing="false" onAction="#igual" prefHeight="71.75" prefWidth="72.0" styleClass="boton-operacion" stylesheets="@../../../styles/style.css" text="=" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Liberation Sans" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="L_operacion" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="25.0" layoutY="64.0" prefHeight="39.0" prefWidth="299.0" style="-fx-background-color: #17171C;" text="0" textFill="#868181">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="13.0" layoutY="13.0" prefHeight="28.0" prefWidth="299.0" stylesheets="@../../../styles/style.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Calculadora Simple" />
+                  <MenuItem fx:id="MIt_cientifica" mnemonicParsing="false" onAction="#abrir_cientifica" text="Calculadora Científica" />
+                  <MenuItem fx:id="MIt_conv" mnemonicParsing="false" onAction="#abrir_conv" text="Conversor " />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" styleClass="in" text="Edición">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>
